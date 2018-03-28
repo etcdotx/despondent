@@ -227,7 +227,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
+  m_MatchWidthOrHeight: 1
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -259,8 +259,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 426765960}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 279, y: 174.5, z: 0}
-  m_LocalScale: {x: 0.6975, y: 0.6975, z: 0.6975}
+  m_LocalPosition: {x: 162.5, y: 91.5, z: 0}
+  m_LocalScale: {x: 0.305, y: 0.305, z: 0.305}
   m_Children:
   - {fileID: 1737778626}
   m_Father: {fileID: 0}
@@ -523,7 +523,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1228054056
 Prefab:
@@ -900,6 +900,14 @@ Prefab:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: backtoscene
       objectReference: {fileID: 0}
+    - target: {fileID: 1082106978264698, guid: cb7725f7d8dc64b46b187a1322794035, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1400804486937262, guid: cb7725f7d8dc64b46b187a1322794035, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: cb7725f7d8dc64b46b187a1322794035, type: 2}
   m_IsPrefabParent: 0
@@ -1040,11 +1048,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4284120278508186, guid: 2898b82191c77704ebe5325481dcdd5c, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 0.026
+      value: 0.001
       objectReference: {fileID: 0}
     - target: {fileID: 4284120278508186, guid: 2898b82191c77704ebe5325481dcdd5c, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.056
+      value: -0.029
       objectReference: {fileID: 0}
     - target: {fileID: 4284120278508186, guid: 2898b82191c77704ebe5325481dcdd5c, type: 2}
       propertyPath: m_LocalPosition.z
@@ -1078,6 +1086,18 @@ Prefab:
     - target: {fileID: 1235385177924050, guid: 2898b82191c77704ebe5325481dcdd5c, type: 2}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4284120278508186, guid: 2898b82191c77704ebe5325481dcdd5c, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.5075955
+      objectReference: {fileID: 0}
+    - target: {fileID: 4284120278508186, guid: 2898b82191c77704ebe5325481dcdd5c, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.4054551
+      objectReference: {fileID: 0}
+    - target: {fileID: 4284120278508186, guid: 2898b82191c77704ebe5325481dcdd5c, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.48903307
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2898b82191c77704ebe5325481dcdd5c, type: 2}
