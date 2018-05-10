@@ -20,3 +20,8 @@ So he sets forth on a journey. A journey to find oneself.
 ((text and img 3 disappear, switch to img 2 with 4a floating in the front [floating posisinya kayak img 4, up and down kayak fox di main menu screen]))
 
 ((img2 disappears after a few seconds, langsung lanjut ke lvl nya))
+
+2-1-3-2
+
+-10.4
+-68.9

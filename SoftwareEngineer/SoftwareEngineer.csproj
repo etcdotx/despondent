@@ -226,6 +226,7 @@
     <Compile Include="Assets\GameManager.cs" />
     <Compile Include="Assets\LevelSystem.cs" />
     <Compile Include="Assets\Quits.cs" />
+    <Compile Include="Assets\ReverseTouchManager.cs" />
     <Compile Include="Assets\TouchManager.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

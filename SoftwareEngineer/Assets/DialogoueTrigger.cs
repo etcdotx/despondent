@@ -6,6 +6,12 @@ public class DialogoueTrigger : MonoBehaviour {
 
     public Dialogoue dialogoue;
 
+    private void Start()
+    {
+        TriggerDialoue();
+    }
+
+
     public void TriggerDialoue() {
     
         FindObjectOfType<DialogoueManager>().StartDialogoue();

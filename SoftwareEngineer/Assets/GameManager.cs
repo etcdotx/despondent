@@ -39,7 +39,13 @@ public class GameManager : MonoBehaviour {
 
     public void death() {
         Time.timeScale = 0f;
-        FindObjectOfType<TouchManager>().gameObject.SetActive(false);
+        if (FindObjectOfType<TouchManager>() != null)
+        {
+            FindObjectOfType<TouchManager>().gameObject.SetActive(false);
+        }
+        else{
+            FindObjectOfType<ReverseTouchManager>().gameObject.SetActive(false);
+        }
         layover.SetActive(true);
         deathmenu.SetActive(true);
     }
