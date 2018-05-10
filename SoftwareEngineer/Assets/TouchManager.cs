@@ -19,6 +19,7 @@ public class TouchManager : MonoBehaviour
     private bool walking;
     private bool walkingl;
     public GameManager game;
+    public AudioSource walk;
     // Use this for initialization
     void Start()
     {
@@ -105,6 +106,16 @@ public class TouchManager : MonoBehaviour
                 sp.flipX = false;
 
             }
+
+            if (ground && walk.isPlaying == false)
+            {
+                walk.Play();
+                Debug.Log("a");
+            }
+            else if(!ground && walk.isPlaying == true){
+                walk.Stop();
+            }
+    
         }
     }
 
@@ -114,6 +125,7 @@ public class TouchManager : MonoBehaviour
         walking = false;
         walkingl = false;
         anim.SetBool("Walking", false);
+        if(walk.isPlaying == true) walk.Stop();
         transform.Translate(stopspeed, 0, 0);
     }
 
