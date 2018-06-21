@@ -219,6 +219,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Items\Spring\Spring.cs" />
     <Compile Include="Assets\Script\Dialogoue.cs" />
     <Compile Include="Assets\Script\DialogoueManager.cs" />
     <Compile Include="Assets\Script\DialogoueTrigger.cs" />

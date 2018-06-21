@@ -23,7 +23,7 @@ public class Teleport : MonoBehaviour {
     {
         if (touch != null)
         {
-            if (Vector2.Distance(this.transform.position, touch.gameObject.transform.position) < 3)
+            if (Vector2.Distance(this.transform.position, touch.gameObject.transform.position) < 1.5f)
             {
                 anim.SetBool("PlayerIsNear", true);
             }
