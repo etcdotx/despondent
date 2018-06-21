@@ -133,7 +133,7 @@ public class TouchManager : MonoBehaviour
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Debug.Log(collision.gameObject.tag);
-        if (collision.gameObject.tag == "ground")
+        if (collision.gameObject.tag == "ground" || collision.gameObject.tag == "Mplat")
         {
             ground = true;
         }
@@ -142,12 +142,19 @@ public class TouchManager : MonoBehaviour
             Debug.Log("Hit");
             stop();
         }
+        if (collision.gameObject.tag == "Mplat") {
+          transform.parent = collision.transform;
+        }
     }
     private void OnCollisionExit2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "ground")
+        if (collision.gameObject.tag == "ground" || collision.gameObject.tag == "Mplat")
         {
             ground = false;
+        }
+        if (collision.gameObject.tag == "Mplat")
+        {
+            transform.parent = null;
         }
     }
     private void OnTriggerEnter2D(Collider2D collision)

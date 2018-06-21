@@ -8,6 +8,7 @@ TagManager:
   - boundary
   - checkpoint
   - killzone
+  - Mplat
   layers:
   - Default
   - TransparentFX
