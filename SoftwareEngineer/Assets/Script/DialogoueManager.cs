@@ -76,7 +76,7 @@ public class DialogoueManager : MonoBehaviour {
             Application.LoadLevel(level);
         }
 
-        if (sentences.Count == 1)
+        if (sentences.Count == 1 && animator != null)
         {
             ball.SetActive(true);
             animator.SetBool("Float", true);
