@@ -1,2 +1,2 @@
-# untitledgame
-simplistic 2D platformer game
+# despondent
+simplistic story driven 2d platformer game
