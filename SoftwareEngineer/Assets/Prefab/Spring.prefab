@@ -53,6 +53,7 @@ GameObject:
   - component: {fileID: 95616440207213578}
   - component: {fileID: 61522684540432836}
   - component: {fileID: 114056068614501594}
+  - component: {fileID: 251841181458703482}
   m_Layer: 0
   m_Name: Spring
   m_TagString: Untagged
@@ -80,7 +81,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1767069717559784}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.087526, y: -4.6796675, z: -5.2851562}
+  m_LocalPosition: {x: -3.2178836, y: 0.59, z: -5.2851562}
   m_LocalScale: {x: 0.29307845, y: 0.29307845, z: 0.29307845}
   m_Children:
   - {fileID: 4133018567606510}
@@ -110,10 +111,10 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
+  m_IsTrigger: 0
+  m_UsedByEffector: 1
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0.7231102}
+  m_Offset: {x: 0, y: 0.79}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -124,7 +125,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 3.5, y: 1.0333977}
+  m_Size: {x: 3.5, y: 0.72}
   m_EdgeRadius: 0
 --- !u!95 &95616440207213578
 Animator:
@@ -159,7 +160,7 @@ MonoBehaviour:
     m_Bits: 1025
   rayCastStart: {fileID: 4133018567606510}
   rayCastEnd: {fileID: 4376549329162532}
-  springForce: 1200
+  springForce: 20
 --- !u!212 &212218709822143318
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -174,7 +175,7 @@ SpriteRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: bafdd0070ea292548a9b0c54739ccda9, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -204,3 +205,21 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
+--- !u!251 &251841181458703482
+PlatformEffector2D:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1767069717559784}
+  m_Enabled: 1
+  m_UseColliderMask: 1
+  m_ColliderMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RotationalOffset: 0
+  m_UseOneWay: 1
+  m_UseOneWayGrouping: 0
+  m_SurfaceArc: 180
+  m_UseSideFriction: 0
+  m_UseSideBounce: 0
+  m_SideArc: 1

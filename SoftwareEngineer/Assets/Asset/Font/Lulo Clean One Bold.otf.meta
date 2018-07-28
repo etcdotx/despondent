@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 0fd6b9abf9ea55d4cbb95d14664b71f7
+timeCreated: 1532783709
+licenseType: Free
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: LuloCleanOne-Bold
+  fontNames:
+  - LuloCleanOne-Bold
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

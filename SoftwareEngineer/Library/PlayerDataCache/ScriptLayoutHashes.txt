@@ -144,5 +144,5 @@ c2275a8bfbb9f9942cad75ecdfded41d UnityEngine.HoloLens.dll:UnityEngine.XR.WSA.Spa
 9de3a22eca9aefadba2d10d5987cefe3 UnityEngine.SpatialTracking.dll:UnityEngine.SpatialTracking.TrackedPoseDriver
 ba2fc40e4b512a173020e47532ee15e9 Assembly-CSharp.dll:.ReverseTouchManager
 281f1f6b0a5ab9cd9b65154e65bf7fed Assembly-CSharp.dll:.Mplatform
-ba2fc40e4b512a173020e47532ee15e9 Assembly-CSharp.dll:.TouchManager
+3e5e408974d2458c5c1456603db07b4d Assembly-CSharp.dll:.TouchManager
 1accb7b15657c15f572e22b72436c8cb Assembly-CSharp.dll:.DialogoueManager

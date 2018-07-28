@@ -4,23 +4,24 @@ using UnityEngine;
 
 public class TouchManager : MonoBehaviour
 {
-    private float drag_distance;
-    private Vector2 fp;
-    private Vector2 lp;
-    public Vector2 jump;
     public float movespeed;
     public float jumpforce;
     private float stopspeed = 0;
-    public bool ground;
-    private Rigidbody2D rb;
-    private SpriteRenderer sp;
-    public float maxwidht;
-    private Animator anim;
+    private float drag_distance;
     private bool walking;
     private bool walkingl;
+    public bool ground;
+    public float maxwidht;
+
+    private Rigidbody2D rb;
+    private SpriteRenderer sp;
+    private Animator anim;
     public GameManager game;
     public AudioSource walk;
-    // Use this for initialization
+    private Vector2 fp;
+    private Vector2 lp;
+    public Vector2 jump;
+
     void Start()
     {
 
@@ -28,10 +29,9 @@ public class TouchManager : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         sp = GetComponent<SpriteRenderer>();
         game = FindObjectOfType<GameManager>();
-        drag_distance = Screen.width * 10 / 100;
+        drag_distance = Screen.width * 10 / 200;
     }
 
-    // Update is called once per frame
     void Update()
     {
 
@@ -61,13 +61,13 @@ public class TouchManager : MonoBehaviour
                         {
                             walking = true;
                             walkingl = false;
-                            Debug.Log("Right");
+                         
                         }
                         else
                         {
                             walking = false;
                             walkingl = true;
-                            Debug.Log("Left");
+                       
                         }
                     }
                     else if (lp.y > fp.y)
@@ -75,14 +75,13 @@ public class TouchManager : MonoBehaviour
                         if (ground)
                         {
                             rb.velocity = new Vector3(0f, jumpforce, 0f);
-                            Debug.Log("Vertical");
+                      
                         }
                     }
                 }
                 else
                 {
-                    //tap
-                    Debug.Log("Tap");
+    
 
                     stop();
                 }
@@ -111,7 +110,7 @@ public class TouchManager : MonoBehaviour
             if (ground && walk.isPlaying == false)
             {
                 walk.Play();
-                Debug.Log("a");
+       
             }
             else if(!ground && walk.isPlaying == true){
                 walk.Stop();
@@ -132,18 +131,19 @@ public class TouchManager : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log(collision.gameObject.tag);
+
         if (collision.gameObject.tag == "ground" || collision.gameObject.tag == "Mplat")
         {
             ground = true;
+            if (collision.gameObject.tag == "Mplat")
+            {
+                transform.parent = collision.transform;
+            }
         }
         if (collision.gameObject.tag == "boundary")
         {
-            Debug.Log("Hit");
+
             stop();
-        }
-        if (collision.gameObject.tag == "Mplat") {
-          transform.parent = collision.transform;
         }
     }
     private void OnCollisionExit2D(Collision2D collision)
@@ -157,6 +157,19 @@ public class TouchManager : MonoBehaviour
             transform.parent = null;
         }
     }
+
+    private void OnCollisionStay2D(Collision2D collision)
+    {
+        if (collision.gameObject.tag == "ground" || collision.gameObject.tag == "Mplat")
+        {
+            ground = true;
+            if (collision.gameObject.tag == "Mplat")
+            {
+                transform.parent = collision.transform;
+            }
+        }
+    }
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag == "checkpoint")

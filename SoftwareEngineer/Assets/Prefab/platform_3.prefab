@@ -20,7 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4418123102548086}
   - component: {fileID: 212369775027102562}
-  - component: {fileID: 61471110752789078}
+  - component: {fileID: 61929938793894374}
   m_Layer: 0
   m_Name: platform_3
   m_TagString: ground
@@ -35,13 +35,13 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1614748405959094}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.6558795, y: -1.460398, z: 0}
+  m_LocalPosition: {x: -3.758, y: -5.3583784, z: 0}
   m_LocalScale: {x: 0.08839317, y: 0.08806472, z: 0.09774445}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!61 &61471110752789078
+--- !u!61 &61929938793894374
 BoxCollider2D:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -64,7 +64,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 37.41, y: 6.8799996}
+  m_Size: {x: 37.86, y: 6.7099996}
   m_EdgeRadius: 0
 --- !u!212 &212369775027102562
 SpriteRenderer:
